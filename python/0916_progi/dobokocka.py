@@ -13,3 +13,6 @@ elif player1_dsz < player2_dsz:
 
 elif player1_dsz == player2_dsz:
     print(f"Döntetlen!")
+
+
+
