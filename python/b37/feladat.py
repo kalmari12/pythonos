@@ -12,6 +12,12 @@ lista1 = []
 
 lista2 = []
 
+lista3 = []
+
+lsita4 = []
+
+lsita5 = []
+
 
 
 while lista1.count(6667) == 0:
@@ -21,10 +27,8 @@ while lista1.count(6667) == 0:
         lista2.append(szam1)
 
 print(f"\n\nAz alaplista számai: {lista1}")
-print(f"\n\nA 3-mal 5-el és héttel osztható számok: {lista2}")
-
-
-
+print(f"\n\nA 3-mal 5-el és 7-tel osztható számok: {lista2}")
+    
 
 
 
