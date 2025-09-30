@@ -62,7 +62,6 @@ szam6ostok.sort(reverse=True)
 
 szam7ostok.sort(reverse=True)
 
-
 print(f"A elso oszto: {szam3}, a vele osztahto szamok: {szam3ostok}\n\n"
       f"A masodik oszto: {szam4}, a vele osztahto szamok: {szam4ostok}\n\n"
       f"A harmadik oszto: {szam5}, a vele osztahto szamok: {szam5ostok}\n\n"
