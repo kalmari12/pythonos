@@ -20,8 +20,8 @@ for x in range(100): #hany darab elemet sorsolok
 szamlista.sort()
 
 
-# 1 elem vagy interbvallum lekerese
-'''
+# 1 elem vagy intervallum lekerese
+
 print(f"{szamlista}") #komplett lista kiirasa
 print(f"{szamlista[23]}") #23. indexű elem kiirasa, ha nincs akkor overflow
 print(f"{szamlista[5:12]}") # 5 és 12 elem kozotti elemek kiirasa
@@ -59,7 +59,7 @@ index = 0
 while  index < len(szamlista):
     print(szamlista[index])
     index += 1 # ha ez nincs itt akkor végtelen ciklus
-'''
+
 # # # # #
 #feladat: szétválogatás
 tizzel = []
