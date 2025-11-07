@@ -15,14 +15,14 @@ print(f"A generált számok: {lista1}\n"
 
 # 2.1 feladat
 
-szavak = ['alma', 'barack', 'Attila', 'kávé', 'szekrény', 'asztal']
+szavak = ['alma', 'barack', 'Attila', 'kávé', 'szekrény', 'asztal', 'alakul']
 index = 0 
 
 for betu in szavak:
     if betu[0] == "a" or "A":
         index = index + 1
 
-print(f"A listában szereplő szavak közül ennyi kezdődik a vagy A val: {index/2}")
+print(f"A listában szereplő szavak közül ennyi kezdődik a vagy A val: {index}")
 
 
 
