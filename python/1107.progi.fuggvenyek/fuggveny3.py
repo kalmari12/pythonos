@@ -6,7 +6,7 @@ for x in range(500):
     szamlista.append(round(random.random()))
 
 print(szamlista)
- 
+
 egyesek = []
 index = 0
 
