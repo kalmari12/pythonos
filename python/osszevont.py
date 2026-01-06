@@ -61,7 +61,7 @@ for szó in szöveglista:
         hindex += 1
 
 print(f"Ennyi szo all harom karakterbol {hindex}")
-print(f"Ennyi szo tartalmazza a mintat {loindex}")
+print(f"Ennyi szo tartalmazza a mintat {loindex}"
 print(f"Ennyi szó tartalmaz k-t: {kindex}")
 
 # mely szavak harom betusek
