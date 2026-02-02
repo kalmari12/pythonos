@@ -61,7 +61,7 @@ print(alista2)
 print(f"a-t tartalmazo szavak {alista}")
 '''
 
-
+'''
 with open("egricsillagok.txt", "r", encoding="utf-8")as fajl:
     szoveg = fajl.read()
 
@@ -97,12 +97,29 @@ for szo in szoveg:
 print(f"Ennyi szo kezdodik a-val: {aszam}")
 print(f"Ezek a szavak kezdodnek a-val: {alista}")
 
+'''
 
+with open("egricsillagok.txt", "r", encoding="utf-8")as fajl:
+    szoveg = fajl.read()
 
+jelek = [",",".","-",">",";",":","_"]
 
+for jel in jelek:
+    szoveg = szoveg.replace(jel," ")
 
+szoveg = szoveg.lower()
 
+szoveg = szoveg.strip().split()
 
+minta = str(input("adja meg a mintat: "))
+
+mintak = []
+
+for szo in szoveg:
+    if minta in szo:
+        mintak.append(szo)
+
+print(f"Ezekben a szavakban talalhato meg a minta: {mintak}")
 
 
 
