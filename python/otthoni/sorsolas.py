@@ -19,7 +19,7 @@ for ember in emberek:
 
 hanyember = int(input("Hany ember legyen egy csapatban? "))
 
-while if x in egycsapat != x:
+while in egycsapat == x:
     # elso csapat
     egycsapat = []
 
@@ -27,8 +27,11 @@ while if x in egycsapat != x:
             egycsapat.append(igazi[random.randint(1,len(igazi))])
 
     # masodik csapat
-    mcsapat = []
+    kettocsapat = []
 
     for x in range(hanyember):
-        mcsapat.append(igazi[random.randint(1,len(igazi))])
+        kettocsapat.append(igazi[random.randint(1,len(igazi))])
 
+
+print(egycsapat)
+print(kettocsapat)
