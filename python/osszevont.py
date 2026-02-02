@@ -79,9 +79,8 @@ print(haromszavak)
 idklista =  []
 idk = str(input("adjon meg egy mintat"))
 
-for szó in szöveglista:
-    if idk == szó[0:len(idk)]:
-        idklista.append(szó)
+index = 0
+
 
 print(idklista)
 

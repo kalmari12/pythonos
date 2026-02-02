@@ -14,7 +14,7 @@ szamlista = []
     else:
         szamlista.append(x)'''
 
-#feltoltes mahgogy=(ugy hogy 100 legyen)
+#feltoltes mashogy=(ugy hogy 100 legyen)
 while len(szamlista) < 10000:
     x = random.randint(1,10000)
     if x not in szamlista:
