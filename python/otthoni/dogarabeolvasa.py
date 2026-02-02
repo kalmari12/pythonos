@@ -24,7 +24,7 @@ with open("minta.txt", "w", encoding="utf-8")as fajlok:
     print(mintalista, file=fajlok)'''
 
 
-with open("egricsillagok.txt", "r", encoding="utf-8")as data:
+'''with open("egricsillagok.txt", "r", encoding="utf-8")as data:
     szoveg = data.read()
 
 jelek = [".",",","-",":","?",";",">","*","\n"]
@@ -59,3 +59,67 @@ for szo in alista:
     
 print(alista2)
 print(f"a-t tartalmazo szavak {alista}")
+'''
+
+
+with open("egricsillagok.txt", "r", encoding="utf-8")as fajl:
+    szoveg = fajl.read()
+
+jelek = [",",".","-","?","_","!",";",">",";",">"]
+
+for jel in jelek:
+    szoveg = szoveg.replace(jel, " ")
+
+szoveg = szoveg.lower()
+
+szoveg = szoveg.strip().split()
+
+mintak = []
+minta = str(input("Adja meg a mintat: "))
+index = 0
+
+for szo in szoveg:
+    if minta in szo:
+        mintak.append(szo)
+        index += 1
+
+print(f"A minta ennyiszer talalhato meg a szövegben: {index}")
+print(f"Ezeket a szavakat talaltuk amikben megvan a minta: {mintak}")
+
+alista = []
+aszam = 0
+
+for szo in szoveg:
+    if szo[0] == "a":
+        alista.append(szo)
+        aszam += 1
+
+print(f"Ennyi szo kezdodik a-val: {aszam}")
+print(f"Ezek a szavak kezdodnek a-val: {alista}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
