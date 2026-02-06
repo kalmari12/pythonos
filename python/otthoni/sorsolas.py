@@ -8,29 +8,32 @@ kihianyzik = []
 #kik hianyoznak bekerese
 while kihianyzik != "nem":
     kihianyzik = str(input("Ki nincs most: "))
-    hianyoznak.append(kihianyzik)
+    if kihianyzik != "nem":
+        hianyoznak.append(kihianyzik)
 
 igazi = []
 
 #hianyzok kivevese
 for ember in emberek:
     if ember not in hianyoznak:
-        igazi.append(ember)
+        if ember == "Felix":
+            if random.random() < 0.1:
+                igazi.append(ember)
+        else:
+            igazi.append(ember)
+
+random.shuffle(igazi)
 
 hanyember = int(input("Hany ember legyen egy csapatban? "))
 
-while in egycsapat == x:
-    # elso csapat
-    egycsapat = []
+# elso csapat
+egycsapat = igazi[:hanyember]
 
-    for x in range(hanyember):
-            egycsapat.append(igazi[random.randint(1,len(igazi))])
+# masodik csapat
+kettocsapat = igazi[hanyember : hanyember*2] 
 
-    # masodik csapat
-    kettocsapat = []
-
-    for x in range(hanyember):
-        kettocsapat.append(igazi[random.randint(1,len(igazi))])
+print(f"------- 1. Csapat -------\n"
+      f"{egycsapat}")
 
 
 print(egycsapat)
