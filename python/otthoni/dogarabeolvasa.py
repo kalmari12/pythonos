@@ -168,7 +168,7 @@ with open("export.txt","w", encoding="utf-8")as fileok:
     print(*szamokIMPORTLISTA, file=fileok)
 
 '''
-import random
+'''import random
 szamok = []
 
 
@@ -187,15 +187,30 @@ importlistalista = importlista.split(";")
 
 print(importlistalista)
 
+'''
+import random
 
+szamok = []
 
+for x in range(500):
+    szamok.append(random.randint(1,1000))
 
+with open("export.txt","w",encoding="utf-8")as data:
+    print(*szamok, sep=";", file=data)
 
+importlista = []
 
+with open("export.txt","r",encoding="utf-8")as adat:
+    importlista = adat.read()
 
+importlistalista = importlista.split(";")
 
+parosok = []
 
+for x in importlistalista:
+    if int(x) % 2 == 0:
+        parosok.append(x)
 
-
+print(parosok)
 
 
