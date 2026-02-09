@@ -22,3 +22,31 @@ paros = []
 for x in szamokIMPORTlista:
     if int(x) % 2 == 0:
         paros.append(x)'''
+
+
+szamlista = []
+
+for szam in range(500):
+    szamlista.append(szam)
+
+with open("export.txt","w",)as data:
+    print(*szamlista, sep=" - ", file=data)
+
+with open("export.txt","r")as adatfolyam:
+    szamok = adatfolyam.read()
+
+szamokimport = szamok.split(" - ")
+
+parosok = []
+
+for szam in szamokimport:
+    if int(szam) % 2 == 0:
+        parosok.append(szam)
+
+print(parosok)
+
+keress = 10
+
+for szam in szamokimport:
+    if int(szam) == keress:
+        print("benne van")
