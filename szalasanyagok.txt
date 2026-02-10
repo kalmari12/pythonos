@@ -1,0 +1,86 @@
+A szálasanyagok a textilipar nyersanyagainak összefoglaló neve.[1] Ez a kifejezés a nyersanyagok külső megjelenési formájára utal, mivel hosszuk sok nagyságrenddel nagyobb, mint az átmérőjük. Ahhoz, hogy a szálasanyagokból fonalakat lehessen fonni, műszakilag legalább 5 mm, gazdaságossági szempontból legalább 10 mm hosszúnak kell lenniük. Azonban szálasanyagokból nem csak fonalakat készítenek, a textiliparnak vannak más eljárásai is, amelyek nem fonalakat használnak fel, hanem a szálasanyagokból a fonalgyártást kikerülve hoznak létre összefüggő kelmét (ilyenek a nemezek és bizonyos fajta ún. nemszőtt kelmék).
+
+A „szál” tehát nem tévesztendő össze a belőle készült fonallal: a fonal alkotóeleme a szál, amely valamely szálasanyag-csoportból származik.
+
+Szálasanyagokat nem csak a textilipar használ fel, hanem fontos alapanyagai a kompozitokat előállító műanyagiparnak is, amely erősítő anyagként hasznosítja ezeket.[2]
+
+A legtöbb szálasanyag közös tulajdonsága, hogy polimer láncmolekulákból, azaz egymáshoz kapcsolódó, egyforma vagy többféle, de szabályosan ismétlődő atomcsoportokból épülnek fel. Ilyen láncmolekulák létrejönnek a természetben (jó példa erre a növényi szálasanyagokat felépítő cellulóz vagy az állati szőrök alkotó anyaga, a keratin), de létrehozhatók mesterséges úton, kémiai eljárásokkal is – ezek az ún. szintetikus szálasanyagok. Vannak azonban olyan szervetlen ásványi anyagok is, amelyek szálas szerkezetűek és ezek is alkalmassá tehetők textilipari felhasználásra.
+
+Csoportosítás az eredet szerint
+A szálasanyagokat alapvetően két nagy csoportba osztjuk. Megkülönböztetünk:
+
+természetes alapanyagú szálasanyagokat, amelyeket a természetben meglévő anyagokból (növényekből, állatokból, ásványokból) nyernek, valamint
+mesterséges szálasanyagokat, amelyeket vagy a természetben meglévő anyagokból (például cellulózból vagy fehérjéből), vagy vegyipari módszerekkel mesterségesen előállított anyagokból (polimerekből) készítenek.
+A részletesebb csoportosítást a mellékelt ábrák szemléltetik.A természetes szálasanyagok a természetből (növényekről, állatokról, bizonyos ásványokból) nyerhető szálak.
+
+1. A növényi eredetű szálak között vannak
+
+magszálak, azaz a növények magján nőtt szálak (ilyen például a pamut),
+háncsrostok, amelyek a növények szárában találhatók (ilyen például a len, a kender, a rami vagy a juta),
+levélrostok (mint nevük is mutatja, a növények levelében találhatók, mint például a szizál, manilakender) valamint
+gyümölcsrostok (ilyen a kókuszdió héjából nyerhető rost).
+2. Az állati eredetű szálasanyagok két csoportja:
+
+a szőrök, például gyapjú, moher (a moherkecske szőre), kasmír (a kasmírkecske szőre), a teve vagy a láma szőre, az angóra (az angóranyúl szőre), a lószőr, valamint
+a mirigyváladékok; ilyen a hernyóselyem vagy a pókselyem.
+3. Ásványi eredetű szálasanyagot az azbesztből és a bazaltból nyernek. (Az azbesztet egészségre ártalmas volta miatt ma már egyre kevesebb helyen használják.)
+
+Mesterséges szálasanyagok
+
+A mesterséges szálasanyagok[Jegyzet 1] kémiai eljárásokkal, gyárilag előállított szálak. Ezen belül két főcsoportot különböztetünk meg:
+
+1. Természetes alapanyagú mesterséges szálak
+
+Természetes alapanyagú szálaknak azokat nevezzük, amelyeket a természetben előforduló polimerek alkotnak.
+
+A természetben meglévő polimerek közül a mesterséges szálas anyagok szempontjából a legfontosabb a cellulóz. Ahhoz, hogy a cellulózból szálakat lehessen készíteni, kémiai eljárásokkal először módosítani kell az eredeti anyagot, hogy oldhatóvá váljék, majd a szálképzést követően vissza kell alakítani (regenerálni) az eredeti polimert – ezek a regenerált szálasanyagok. Legfontosabb képviselőjük a viszkóz és ennek környezetbarátabb technológiával előállított rokona, a lyocell, amelyek mind cellulóz láncmolekulákból állnak.
+Vannak emellett olyan szálasanyagok is, amelyek gyártásánál a kiinduló anyag szintén a cellulóz, de azt nem eredeti formájába alakítják vissza, hanem némileg módosult formában alkotja a szálak anyagát. Ezek legfontosabb képviselője az acetát és a triacetát.
+Emellett készítenek szálasanyagokat egyes növényi fehérjékből is (szójababból, kukoricából nyert fehérjéből).
+Természetes alapanyagú mesterséges szálasanyag a kaucsukból nyert gumiszál is.
+2. Szintetikus szálak
+
+Az olyan szálakat, amelyek hosszú láncmolekulákból álló polimerjeit kis molekulákból (ún. monomerekből) vegyipari eljárásokkal hozzák létre (szintetizálják), szintetikus szálasanyagoknak nevezzük. Ezek is több csoportba oszthatók:
+
+Egyféle kis molekulájú vegyület azonos molekulacsoportjainak összekapcsolódásával (az ún. polimerizációval) jön létre például a poliamidok[Jegyzet 2] egy része (a legismertebb ezek között a 6 szénatomot tartalmazó poliamid 6), továbbá a poliakrilnitril és a polivinilklorid (PVC) szál.
+A szintetikus szálasanyagok egy másik csoportjánál a láncmolekula két különböző kis molekula szigorú egymás utáni sorrendben történő sorozatos összekapcsolódásával jön létre, amelynek során melléktermékként vízmolekulák keletkeznek (ezek az ún. polikondenzátumok) – ide tartozik például az elsőnek feltalált poliamid fajta, a poliamid 6.6 (amelyben a láncmolekulát alkotó két monomer mindegyike hat-hat szénatomot tartalmaz és amelyet eredetileg Nylon márkanéven hoztak forgalomba), valamint a poliészter.
+A harmadik, csoport a poliaddícióval létrehozott polimer, amelyben különféle kis molekulájú vegyületekből víz kilépése nélkül keletkeznek a hosszú molekulaláncok; a textilipar ezek közül a poliuretán alapú elasztánfonalakat használja.
+Az olyan mesterséges szálasanyagok közül, amelyeket szervetlen anyagból állítanak elő, a legfontosabbak az üvegszálak, a szénszálak és a fémszálak.
+Vannak olyan szálasanyagként alkalmazott, mesterséges úton előállított termékek is, amelyek nem sorolhatók be a fenti csoportokba. A legfontosabb ezek közül a fémmel bevont keskeny és nagyon vékony műanyag fóliacsík (ún. „fémezett fonal”), amit a textilipar különböző színekben díszítőfonal gyanánt használ fel. Újabban – műszaki célokra – a textilipar vékony fémhuzalokból is készít kelméket.
+A szintetikus szálasanyagok igen nagy előnye, hogy tulajdonságaik megfelelő kémiai és szálképzési eljárásokkal igen tág határok között állíthatók be. Ez a magyarázata rendkívüli sokféleségüknek is. Készítenek szintetikus szálasanyagokat akár egymással teljesen ellentétes tulajdonságokkal is. Vannak például nagy szilárdságú és kis nyúlású, valamint gyengébb, de nagyobb nyúlású szálak. Készülnek sok nedvességet felvenni képes vagy éppen egyáltalán nem nedvesedő szálak. Fontos szerepet töltenek be például a védőruhák készítésénél a nagy hőállóságú (több száz C-foknak is ellenálló), vagy az éghetetlen szálak, de a hideget jobban bíró és kiváló hőszigetelő szálak is. (Az utóbbiak üregesek és így légzárványt tartalmaznak, ezáltal jó hőszigetelő képességgel rendelkeznek.) Vannak az elektromosságot jól vezető, vagy éppen kiváló elektromos szigetelő képességű szálak. Kifejlesztettek az ibolyántúli sugarak ellen védelmet nyújtó, valamint a különféle vegyszereknek jól ellenálló szálakat is. Ebből a hatalmas választékból a mindenkori felhasználási cél követelményeinek legmegfelelőbbet választhatják ki a felhasználók. Ilyen nagy – és főleg tervezhető – tulajdonságskálát a természetes szálasanyagok nem kínálnak.
+
+A 21. században, a fenntartható fejlődés szempontjainak előtérbe kerülésével egyre nagyobb fontosságot nyernek azok a kutatások, amelyek az ún. bioszintetikus szálasanyagok kifejlesztésére és gyártásuk meghonosítására irányulnak. A "hagyományos" úton előállított szintetikus szálasanyagokat fosszilis (kőolaj-származékokból nyert) anyagokból állítják elő. A kőolaj mennyisége a világban óriási ugyan, de egyre fogy. Azonkívül kitermelése, majd abból azoknak a monomer vegyületeknek az előállítása, amelyek a szintetikus szálak anyagát képezik, rendkívül energiaigényes és sokszor környezetszennyező. A fosszilis eredetű anyagokból előállított szálasanyagok ill. a belőlük gyártott termékek hátrányos tulajdonsága az is, hogy biológiailag nem bonthatók le, vagy csak rendkívül hosszú idő alatt bomlanak le, ezért nem újrahasznosítható hulladékaik nagyon terhelik a környezetet. Manapság ezért egyre nagyobb törekvés van olyan eljárások kifejlesztésére, amelyek más kiinduló anyagokból képesek a szálgyártáshoz szükséges monomer vegyületek előállítására. Kézenfekvő, hogy ehhez a lehető legnagyobb mértékben a természetben megújuló forrásokat igyekeznek keresni, amiket különböző növényekben, elsősorban a kukoricában, cukorrépában, cukornádban, növényi (pl. szója-, ricinus-) olajokban sikerült megtalálni. Az ezekből készült szintetikus szálasanyagokat nevezik bioszintetikus szálaknak.
+
+Csoportosítás a szálak hossza szerint
+A szálasanyagok hossza szerint megkülönböztetünk
+
+rövid (néhány vagy néhány tíz centiméter hosszúságú) szálakat, mint amilyenek a növényi eredetű szálak és az állati eredetűek közül a szőrök (ezeket közvetlenül lehet felhasználni fonalak készítésére a fonás eljárásaival), valamint
+„végtelen” hosszú, folytonos szálakat (ezeket a textilipari szaknyelv filamenteknek nevezi), amelyek hossza több száz méter vagy akár több kilométer is lehet. Erre a természetben előforduló szálak között a legjobb példa a hernyóselyem. A mesterséges szálasanyagokat mind ilyen formában készítik, és vagy ebben a formában hagyják meg, vagy rövidebb szálakra felvágják azokat – ezek az ún. vágott szálak[Jegyzet 3] –, hogy természetes szálakhoz lehessen keverni, vagy belőlük azokhoz hasonló fonalakat (ún. font fonalakat) lehessen előállítani (lásd bővebben a fonás szócikkben).
+Csoportosítás a megjelenési forma szerint
+A szálasanyagok többféle megjelenési formában fordulnak elő:
+
+elemi szálak: a szálasanyag különálló és roncsolás nélkül tovább nem osztható legkisebb eleme. Ilyen a természetes szálasanyagok között például a pamut- vagy a gyapjúszál, a mesterséges szálasanyagoknál a vágott szál vagy az önálló filament;
+rostok: egyes növényi szálas anyagok (például len, kender stb.) elemi sejtekre bontható sejtkötegei;
+selymek: ezen a néven a textiliparban kifejezetten a hernyóselymet és a pókselymet értik. A mesterséges úton előállított, de a „valódi” selyemhez hasonlóan rendkívül hosszú szálak nem értendők ide, ezek szakmai elnevezése
+végtelen szál, folytonos szál vagy filament. A köznyelvben használt "műselyem" kifejezést eredetileg a mesterségesen előállított, cellulóz alapú filamentfonalakra alkalmazták, amikor ezek alkalmazása a ruházkodásban elterjedt. Napjainkban már nagyon sokféle hasonló megjelenésű, de nem cellulóz alapú szálasanyag létezik, így a "műselyem" a kifejezés kerülendő.
+Szálfinomság
+A szálak finomságát elvileg az átmérővel jellemezhetjük, ami általában néhány ezred milliméter nagyságrendű. A selyemszál átmérője például 9‑12 μm, a pamutszálé 15‑20 μm, a gyapjúszálé 15‑25 μm. Gyakorlatilag azonban ez a mérőszám nem használható a finomság jellemzésére, egyrészt azért, mert mérése nehéz, speciális műszert igényel, másrészt azért, mert a szálak keresztmetszete nem szabályos, ezért a mért érték attól függ, hogy a keresztmetszetben milyen irányban mérünk. Ezért a gyakorlatban a szálfinomság jellemzésére az egységnyi tömegű szál hosszát, vagy az egységnyi hosszúságú szál tömegét adják meg.
+
+A műszaki fejlődés folyamán a különböző országokban különböző számozási rendszerek alakultak ki a szálfinomság jellemzésére. Az angolszász nyelvterületen ma is az ott használatos mértékegységeket használják (yard, font stb.), másutt ‑ nálunk is ‑ a metrikus mértékegységek (méter, gramm) használatosak erre a célra is.
+
+A finomsági számozási rendszerek két csoportba oszthatók:
+
+hossz-„számozás” vagy indirekt rendszer, amelyekben a finomsági szám a rendszer alapjául elfogadott tömegegység hosszát jelenti, valamint a
+tömeg-„számozás” vagy direkt rendszer, ahol a finomsági szám a rendszer alapjául elfogadott hosszegység tömegét jelenti.
+A metrikus mértékegységeket használó országokban a tömeg-számozási rendszerben megadott finomsági szám az 1 gramm tömegű szál hosszát jelenti méterben, ennek egyezményes jele: Nm, ami a „numerus metricus” kifejezés rövidítése. Ilyen mértékegységekkel dolgozva például a pamutszálak finomsága Nm 6000‑7000 nagyságrendű (vagyis 6‑7 ezer méternyi pamutszál tömege 1 gramm). Ugyancsak a metrikus mértékegységek használatával a hossz-számozási rendszerben megadott finomsági szám az 1000 méter hosszú szál tömegét jelenti grammban. Ezt utóbbit nevezik „tex finomságnak” és ha a tömeg 1000 méterre vonatkozik, a szám mögé ezt a szót írjuk mértékegységként: „tex”. Használatos még a 10 000 méterre vonatkoztatott tömeg is, és mivel ennek mérőszáma így 10-szeres, a mértékegység ebben az esetben decitex, rövidítve dtex. Bár nem szabványos, de alkalmazásban van a „denier” (ejtsd: dönié) mértékegység is (rövidítve: den), ez 9000 méter hosszú szál tömegét jelenti szintén grammban.
+
+A „direkt” és „indirekt” kifejezések abból származnak, hogy a direkt számozással megadott finomságnál a nagyobb szám vastagabb, a kisebb szám vékonyabb szálat jellemez, az indirekt számozás esetén pedig éppen fordítva: vékonyabb szálhoz nagyobb finomsági szám tartozik.
+
+A finomsági számozási rendszerek egymásba átszámíthatók:
+
+Nm = 1000/tex = 10 000/dtex = 9000/den
+tex = 1000/Nm
+dtex = 10 000/Nm = 1,11 den
+den = 9000/Nm = 0,9 dtex = 9 tex
+Példa: A finom nejlonharisnyák készítésére például igen gyakran használnak 20 den-es poliamid filamentet, ami tehát azt jelenti, hogy ebből 9000 méter tömege 20 gramm. 20 den tehát megfelel 22,2 (kerekítve 22) dtex-nek, ill. a tömeg-számozási rendszerben Nm=9000/20=450-nek.
+
+Megjegyezzük, hogy ugyanezen az elven történik a fonalak finomsági számozása is.
