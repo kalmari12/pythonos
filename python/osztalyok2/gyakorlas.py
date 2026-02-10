@@ -1,5 +1,3 @@
-import random 
-
 with open("szalasanyagok.txt","r",encoding="utf-8")as data:
     szoveg = data.read()
 
