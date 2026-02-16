@@ -32,8 +32,7 @@ egycsapat = igazi[:hanyember]
 # masodik csapat
 kettocsapat = igazi[hanyember : hanyember*2] 
 
-print(f"------- 1. Csapat -------\n"
-      f"{egycsapat}")
+
 
 
 print(egycsapat)
