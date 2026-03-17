@@ -1,0 +1,50 @@
+ID,Termék név,Kategória,Ár(HUF),Mennyiség,Leírás
+1,Lenovo ThinkPad E14 Gen4,Laptop,329900,12,Megbízható üzleti laptop, erős teljesítménnyel
+2,ASUS ROG Strix G16,Laptop,499900,8,Játékra tervezett gamer laptop, RTX grafikus kártyával
+3,Apple MacBook Air M2,Laptop,469900,10,Könnyű és gyors, M2 chip-pel
+4,Dell XPS 15,Laptop,589900,6,Professzionális munkaeszköz, prémium kijelzővel
+5,Intel Core i7-12700K,Processzor,139900,20,12 magos, nagy teljesítményű CPU modern feladatokra
+6,AMD Ryzen 9 7900X,Processzor,179900,15,Nagy teljesítmény, ideális játékra és munkára
+7,Intel Core i5-12400F,Processzor,74900,25,Megfizethető, erős középkategóriás CPU
+8,ASUS Prime B660M,Alaplap,49900,18,Megbízható alaplap 12. generációs Intel CPU-khoz
+9,MSI MAG X570 Tomahawk,Alaplap,88900,10,Fejlett alaplap AMD Ryzen processzorokhoz
+10,NVIDIA GeForce RTX 4070Ti,Videokártya,389900,15,Prémium grafikus teljesítmény játékhoz és 3D tervezéshez
+11,AMD Radeon RX 7900XT,Videokártya,339900,12,Erőteljes grafikus kártya játékra és grafikai munkákhoz
+12,Kingston Fury 16GB DDR5,Memória,35900,40,Gyors DDR5 memória, játékhoz és munkához
+13,Corsair Vengeance 32GB DDR4,Memória,48900,35,Nagy kapacitás, stabil teljesítmény
+14,Samsung 980 Pro 1TB,SSD,64900,30,Villámgyors NVMe SSD, 1TB kapacitással
+15,WD Blue 2TB HDD,Merevlemez,22900,50,Megbízható adattárolás nagy kapacitással
+16,Seagate Barracuda 4TB,Merevlemez,44900,25,Ideális filmekhez, játékokhoz és archiváláshoz
+17,LG UltraGear 27'' 165Hz,Monitor,129900,14,Gyors képfrissítés, játékosoknak ideális
+18,Dell UltraSharp 32'' 4K,Monitor,189900,10,Professzionális 4K monitor munkához és szórakozáshoz
+19,Logitech MX Master 3S,Egér,34900,35,Prémium vezeték nélküli egér, ergonomikus kialakítással
+20,Razer DeathAdder V2,Egér,24900,40,Népszerű gamer egér, gyors reakcióidővel
+21,SteelSeries Apex Pro,Billentyűzet,79900,20,Mechanikus billentyűzet állítható kapcsolókkal
+22,Logitech G213 Prodigy,Billentyűzet,19900,45,Megfizethető, megbízható gamer billentyűzet
+23,HyperX Cloud II,Fejhallgató,34900,25,Kényelmes és minőségi gamer headset
+24,Sony WH-1000XM5,Fejhallgató,119900,15,Prémium zajszűrős fejhallgató
+25,Canon Pixma G640,Nyomtató,79900,12,Színes tintasugaras nyomtató, fotónyomtatásra is
+26,HP LaserJet Pro M404dn,Nyomtató,99900,10,Gyors, fekete-fehér lézernyomtató irodába
+27,Windows 11 Pro Licenc,Szoftver,59900,100,Eredeti Microsoft operációs rendszer
+28,Microsoft Office 2021 Home & Student,Szoftver,89900,80,Teljes értékű irodai csomag
+29,Adobe Photoshop 1 éves előfizetés,Szoftver,119900,60,Professzionális képszerkesztő szoftver
+30,Adobe Premiere Pro 1 éves előfizetés,Szoftver,134900,50,Videószerkesztő szoftver kreatív szakembereknek
+31,ESET Internet Security 1 év,Szoftver,14900,120,Megbízható vírusvédelem és internetbiztonság
+32,Kaspersky Total Security 1 év,Szoftver,16900,100,Komplett védelem minden eszközre
+33,Visual Studio Professional Licenc,Szoftver,199900,30,Fejlesztői környezet professzionális programozóknak
+34,JetBrains IntelliJ IDEA Ultimate,Szoftver,179900,25,Professzionális Java fejlesztői eszköz
+35,Minecraft Java Edition,Játék,11900,200,Világszerte népszerű kreatív építős játék
+36,Cyberpunk 2077,Játék,19900,150,Nyílt világú akció-szerepjáték
+37,FIFA 24,Játék,24900,180,Legújabb focis játék a sorozatból
+38,Call of Duty: Modern Warfare III,Játék,25900,140,Akciódús FPS játék online módokkal
+39,Elden Ring,Játék,22900,120,Díjnyertes fantasy szerepjáték
+40,Diablo IV,Játék,24900,110,Sötét hangulatú akció-szerepjáték
+41,Logitech C920 HD Pro,Webkamera,29900,50,FullHD webkamera kiváló képminőséggel
+42,Elgato Stream Deck,Kiegészítő,54900,35,Tartalomkészítőknek szánt vezérlőpanel
+43,TP-Link Archer AX73,Router,42900,40,Gyors Wi-Fi 6 router otthonra és irodába
+44,Ubiquiti UniFi Dream Machine,Router,99900,20,Professzionális hálózati központ
+45,Synology DS220+,NAS,169900,15,Kétlemezes NAS otthoni és irodai használatra
+46,QNAP TS-451D2,NAS,189900,12,Négyfiókos NAS médialejátszáshoz és mentéshez
+47,APC Back-UPS 900VA,Szünetmentes tápegység,59900,25,Megbízható védelem áramszünet ellen
+48,Cooler Master MasterBox MB511,Számítógépház,29900,30,Modern kialakítású, jól szellőző PC ház
+49,be quiet! Straight Power 11 750W,Tápegység,59900,22,Nagy teljesítményű, halk tápegység
