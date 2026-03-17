@@ -1,0 +1,12 @@
+nev;kategoria
+paradicsom;zoldseg
+uborka;zoldseg
+alma;gyumolcs
+korte;gyumolcs
+banan;gyumolcs
+paprika;zoldseg
+hagyma;zoldseg
+fokhagyma;zoldseg
+szolo;gyumolcs
+eper;gyumolcs
+repa;zoldseg
