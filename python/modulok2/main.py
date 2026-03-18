@@ -1,4 +1,5 @@
 from osztalyok import termek
+from osztalyok import rendeles
 import csv
 
 '''ttermek1 = termek("Paradicsom",45,"Zöldség",139)
@@ -47,17 +48,19 @@ with open("python/modulok2/termekek_hardver_szoftver.csv", "r",encoding="utf-8")
     next(adat)
     for sor in adat:
         adatfolyam = sor.strip().split(',')
-        id = adatfolyam[0]
+        id = adatfolyam[0] 
         nev = adatfolyam[1]
         kategoria = adatfolyam[2]
         ar = adatfolyam[3]
         mennyiseg = adatfolyam[4]
         leiras = adatfolyam[5]
 
-        t = termek(,nev, kategoria, ar)
+        t = termek(id,nev, kategoria, ar, mennyiseg, leiras)
         termekek.append(t)
 
 for termek in termekek:
-    print(termek)
+    print(termek,'\n',40*"-")
 
-    
+rendeles1 = rendeles(any,"")
+
+print(rendeles())
