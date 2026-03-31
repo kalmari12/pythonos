@@ -54,7 +54,7 @@ with open("python/modulok2/termekek_hardver_szoftver.csv", "r",encoding="utf-8")
         mennyiseg = adatfolyam[4]
         leiras = adatfolyam[5]
 
-        t = termek(,nev, kategoria, ar)
+        t = termek(id,nev, kategoria, ar, mennyiseg, leiras)
         termekek.append(t)
 
 for termek in termekek:

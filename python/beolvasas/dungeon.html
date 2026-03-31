@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Roguelike</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #1a1a2e;
+            color: #eee;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        h1 {
+            color: #e94560;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #e94560;
+        }
+        #game-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #game {
+            background: #0f0f23;
+            border: 3px solid #e94560;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 18px;
+            line-height: 1.2;
+            white-space: pre;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+        }
+        #sidebar {
+            background: #16213e;
+            border: 2px solid #0f3460;
+            border-radius: 8px;
+            padding: 15px;
+            min-width: 200px;
+        }
+        .stat {
+            margin: 10px 0;
+            padding: 8px;
+            background: #0f0f23;
+            border-radius: 4px;
+        }
+        .stat-label {
+            color: #888;
+            font-size: 12px;
+        }
+        .stat-value {
+            color: #e94560;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .health-bar {
+            width: 100%;
+            height: 20px;
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .health-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            transition: width 0.3s;
+        }
+        #log {
+            max-height: 150px;
+            overflow-y: auto;
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 15px;
+            padding: 10px;
+            background: #0f0f23;
+            border-radius: 4px;
+        }
+        .log-entry {
+            margin: 3px 0;
+            padding: 2px 0;
+            border-bottom: 1px solid #222;
+        }
+        .log-damage { color: #e94560; }
+        .log-heal { color: #4ade80; }
+        .log-item { color: #fbbf24; }
+        .log-level { color: #60a5fa; }
+        #controls {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+        #message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.95);
+            padding: 30px;
+            border: 3px solid #e94560;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+            z-index: 100;
+        }
+        #message h2 {
+            color: #e94560;
+            margin-bottom: 15px;
+        }
+        #message button {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        #message button:hover {
+            background: #ff6b6b;
+        }
+        .legend {
+            font-size: 11px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .legend span {
+            display: inline-block;
+            margin: 2px 8px 2px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>⚔️ Dungeon Roguelike</h1>
+    
+    <div id="game-container">
+        <div>
+            <div id="game"></div>
+            <div class="legend">
+                <span>@ Játékos</span>
+                <span style="color:#e94560">G Goblin</span>
+                <span style="color:#a855f7">O Ork</span>
+                <span style="color:#dc2626">D Sárkány</span>
+                <span style="color:#fbbf24">$ Arany</span>
+                <span style="color:#4ade80">♥ Gyógyital</span>
+                <span style="color:#60a5fa">⚔ Fegyver</span>
+                <span style="color:#c084fc">▼ Lépcső</span>
+            </div>
+        </div>
+        
+        <div id="sidebar">
+            <div class="stat">
+                <div class="stat-label">ÉLETERŐ</div>
+                <div class="health-bar">
+                    <div class="health-fill" id="health-bar"></div>
+                </div>
+                <div class="stat-value"><span id="hp">100</span> / <span id="maxhp">100</span></div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">SZINT</div>
+                <div class="stat-value" id="level">1</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">TAPASZTALAT</div>
+                <div class="stat-value"><span id="xp">0</span> / <span id="xpneed">20</span></div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">ARANY</div>
+                <div class="stat-value">💰 <span id="gold">0</span></div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">TÁMADÁS</div>
+                <div class="stat-value">⚔️ <span id="attack">5</span></div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">EMELET</div>
+                <div class="stat-value">🏰 <span id="floor">1</span></div>
+            </div>
+            <div id="log"></div>
+        </div>
+    </div>
+    
+    <div id="controls">
+        <p>Mozgás: ← ↑ ↓ → vagy WASD</p>
+        <p>Várj: SPACE | Új játék: R</p>
+    </div>
+    
+    <div id="message">
+        <h2 id="msg-title"></h2>
+        <p id="msg-text"></p>
+        <button onclick="startGame()">Új Játék</button>
+    </div>
+
+    <script>
+        const WIDTH = 50;
+        const HEIGHT = 25;
+        const TILES = {
+            WALL: '#',
+            FLOOR: '.',
+            PLAYER: '@',
+            STAIRS: '▼',
+            GOLD: '$',
+            POTION: '♥',
+            WEAPON: '⚔'
+        };
+        
+        const ENEMIES = {
+            G: { name: 'Goblin', hp: 15, attack: 3, xp: 10, color: '#e94560' },
+            O: { name: 'Ork', hp: 30, attack: 6, xp: 25, color: '#a855f7' },
+            D: { name: 'Sárkány', hp: 60, attack: 12, xp: 50, color: '#dc2626' }
+        };
+
+        let map = [];
+        let visible = [];
+        let player = {};
+        let enemies = [];
+        let items = [];
+        let gameOver = false;
+
+        function init() {
+            player = {
+                x: 0, y: 0,
+                hp: 100, maxHp: 100,
+                attack: 5,
+                level: 1, xp: 0, xpNeed: 20,
+                gold: 0,
+                floor: 1
+            };
+            enemies = [];
+            items = [];
+            gameOver = false;
+            generateMap();
+            updateUI();
+            render();
+        }
+
+        function generateMap() {
+            map = [];
+            visible = [];
+            for (let y = 0; y < HEIGHT; y++) {
+                map[y] = [];
+                visible[y] = [];
+                for (let x = 0; x < WIDTH; x++) {
+                    map[y][x] = TILES.WALL;
+                    visible[y][x] = false;
+                }
+            }
+
+            const rooms = [];
+            const numRooms = 8 + Math.floor(Math.random() * 5);
+
+            for (let i = 0; i < numRooms; i++) {
+                const w = 5 + Math.floor(Math.random() * 8);
+                const h = 4 + Math.floor(Math.random() * 5);
+                const x = 1 + Math.floor(Math.random() * (WIDTH - w - 2));
+                const y = 1 + Math.floor(Math.random() * (HEIGHT - h - 2));
+
+                let overlaps = false;
+                for (const room of rooms) {
+                    if (x < room.x + room.w + 1 && x + w + 1 > room.x &&
+                        y < room.y + room.h + 1 && y + h + 1 > room.y) {
+                        overlaps = true;
+                        break;
+                    }
+                }
+
+                if (!overlaps) {
+                    rooms.push({ x, y, w, h });
+                    for (let ry = y; ry < y + h; ry++) {
+                        for (let rx = x; rx < x + w; rx++) {
+                            map[ry][rx] = TILES.FLOOR;
+                        }
+                    }
+                }
+            }
+
+            for (let i = 1; i < rooms.length; i++) {
+                const prev = rooms[i - 1];
+                const curr = rooms[i];
+                const x1 = Math.floor(prev.x + prev.w / 2);
+                const y1 = Math.floor(prev.y + prev.h / 2);
+                const x2 = Math.floor(curr.x + curr.w / 2);
+                const y2 = Math.floor(curr.y + curr.h / 2);
+
+                if (Math.random() < 0.5) {
+                    carveH(x1, x2, y1);
+                    carveV(y1, y2, x2);
+                } else {
+                    carveV(y1, y2, x1);
+                    carveH(x1, x2, y2);
+                }
+            }
+
+            if (rooms.length > 0) {
+                const startRoom = rooms[0];
+                player.x = Math.floor(startRoom.x + startRoom.w / 2);
+                player.y = Math.floor(startRoom.y + startRoom.h / 2);
+
+                const endRoom = rooms[rooms.length - 1];
+                const stairX = Math.floor(endRoom.x + endRoom.w / 2);
+                const stairY = Math.floor(endRoom.y + endRoom.h / 2);
+                map[stairY][stairX] = TILES.STAIRS;
+            }
+
+            enemies = [];
+            const numEnemies = 5 + player.floor * 2;
+            for (let i = 0; i < numEnemies; i++) {
+                const pos = getRandomFloor();
+                if (pos && (pos.x !== player.x || pos.y !== player.y)) {
+                    let type = 'G';
+                    const roll = Math.random();
+                    if (player.floor >= 3 && roll < 0.2) type = 'D';
+                    else if (player.floor >= 2 && roll < 0.4) type = 'O';
+                    
+                    const template = ENEMIES[type];
+                    enemies.push({
+                        x: pos.x, y: pos.y,
+                        type: type,
+                        hp: template.hp + player.floor * 5,
+                        maxHp: template.hp + player.floor * 5,
+                        attack: template.attack + player.floor,
+                        xp: template.xp + player.floor * 5
+                    });
+                }
+            }
+
+            items = [];
+            const numItems = 6 + Math.floor(Math.random() * 4);
+            for (let i = 0; i < numItems; i++) {
+                const pos = getRandomFloor();
+                if (pos) {
+                    const roll = Math.random();
+                    let type;
+                    if (roll < 0.5) type = 'gold';
+                    else if (roll < 0.85) type = 'potion';
+                    else type = 'weapon';
+                    items.push({ x: pos.x, y: pos.y, type: type });
+                }
+            }
+
+            updateVisibility();
+        }
+
+        function carveH(x1, x2, y) {
+            for (let x = Math.min(x1, x2); x <= Math.max(x1, x2); x++) {
+                if (y > 0 && y < HEIGHT - 1) map[y][x] = TILES.FLOOR;
+            }
+        }
+
+        function carveV(y1, y2, x) {
+            for (let y = Math.min(y1, y2); y <= Math.max(y1, y2); y++) {
+                if (x > 0 && x < WIDTH - 1) map[y][x] = TILES.FLOOR;
+            }
+        }
+
+        function getRandomFloor() {
+            for (let tries = 0; tries < 100; tries++) {
+                const x = Math.floor(Math.random() * WIDTH);
+                const y = Math.floor(Math.random() * HEIGHT);
+                if (map[y][x] === TILES.FLOOR) return { x, y };
+            }
+            return null;
+        }
+
+        function updateVisibility() {
+            for (let y = 0; y < HEIGHT; y++) {
+                for (let x = 0; x < WIDTH; x++) {
+                    const dx = x - player.x;
+                    const dy = y - player.y;
+                    if (Math.sqrt(dx * dx + dy * dy) <= 8) {
+                        visible[y][x] = true;
+                    }
+                }
+            }
+        }
+
+        function render() {
+            let display = '';
+            for (let y = 0; y < HEIGHT; y++) {
+                for (let x = 0; x < WIDTH; x++) {
+                    if (x === player.x && y === player.y) {
+                        display += `<span style="color:#4ade80;font-weight:bold">${TILES.PLAYER}</span>`;
+                    } else if (!visible[y][x]) {
+                        display += ' ';
+                    } else {
+                        const enemy = enemies.find(e => e.x === x && e.y === y);
+                        const item = items.find(i => i.x === x && i.y === y);
+                        
+                        if (enemy) {
+                            display += `<span style="color:${ENEMIES[enemy.type].color}">${enemy.type}</span>`;
+                        } else if (item) {
+                            if (item.type === 'gold') display += `<span style="color:#fbbf24">${TILES.GOLD}</span>`;
+                            else if (item.type === 'potion') display += `<span style="color:#4ade80">${TILES.POTION}</span>`;
+                            else display += `<span style="color:#60a5fa">${TILES.WEAPON}</span>`;
+                        } else if (map[y][x] === TILES.STAIRS) {
+                            display += `<span style="color:#c084fc">${TILES.STAIRS}</span>`;
+                        } else if (map[y][x] === TILES.WALL) {
+                            display += `<span style="color:#4a5568">#</span>`;
+                        } else {
+                            display += `<span style="color:#2d3748">.</span>`;
+                        }
+                    }
+                }
+                display += '\n';
+            }
+            document.getElementById('game').innerHTML = display;
+        }
+
+        function move(dx, dy) {
+            if (gameOver) return;
+
+            const newX = player.x + dx;
+            const newY = player.y + dy;
+
+            if (newX < 0 || newX >= WIDTH || newY < 0 || newY >= HEIGHT) return;
+            if (map[newY][newX] === TILES.WALL) return;
+
+            const enemy = enemies.find(e => e.x === newX && e.y === newY);
+            if (enemy) {
+                attack(enemy);
+            } else {
+                player.x = newX;
+                player.y = newY;
+                
+                const itemIdx = items.findIndex(i => i.x === newX && i.y === newY);
+                if (itemIdx !== -1) {
+                    pickupItem(items[itemIdx]);
+                    items.splice(itemIdx, 1);
+                }
+
+                if (map[newY][newX] === TILES.STAIRS) {
+                    nextFloor();
+                }
+            }
+
+            updateVisibility();
+            enemyTurn();
+            updateUI();
+            render();
+        }
+
+        function attack(enemy) {
+            const damage = player.attack + Math.floor(Math.random() * 3);
+            enemy.hp -= damage;
+            addLog(`${ENEMIES[enemy.type].name}-nak ${damage} sebzést okoztál!`, 'damage');
+
+            if (enemy.hp <= 0) {
+                const idx = enemies.indexOf(enemy);
+                enemies.splice(idx, 1);
+                player.xp += enemy.xp;
+                addLog(`Legyőzted a ${ENEMIES[enemy.type].name}-t! +${enemy.xp} XP`, 'level');
+                checkLevelUp();
+            }
+        }
+
+        function enemyTurn() {
+            for (const enemy of enemies) {
+                const dx = player.x - enemy.x;
+                const dy = player.y - enemy.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < 10) {
+                    if (Math.abs(dx) <= 1 && Math.abs(dy) <= 1) {
+                        const damage = enemy.attack + Math.floor(Math.random() * 3);
+                        player.hp -= damage;
+                        addLog(`${ENEMIES[enemy.type].name} ${damage} sebzést okozott!`, 'damage');
+                        
+                        if (player.hp <= 0) {
+                            endGame(false);
+                            return;
+                        }
+                    } else {
+                        let mx = 0, my = 0;
+                        if (Math.abs(dx) > Math.abs(dy)) mx = dx > 0 ? 1 : -1;
+                        else my = dy > 0 ? 1 : -1;
+
+                        const newX = enemy.x + mx;
+                        const newY = enemy.y + my;
+
+                        if (map[newY][newX] !== TILES.WALL && 
+                            !enemies.some(e => e.x === newX && e.y === newY)) {
+                            enemy.x = newX;
+                            enemy.y = newY;
+                        }
+                    }
+                }
+            }
+        }
+
+        function pickupItem(item) {
+            if (item.type === 'gold') {
+                const amount = 10 + Math.floor(Math.random() * 20) + player.floor * 5;
+                player.gold += amount;
+                addLog(`Találtál ${amount} aranyat!`, 'item');
+            } else if (item.type === 'potion') {
+                const heal = 20 + Math.floor(Math.random() * 15);
+                player.hp = Math.min(player.maxHp, player.hp + heal);
+                addLog(`Gyógyital! +${heal} HP`, 'heal');
+            } else if (item.type === 'weapon') {
+                const bonus = 2 + Math.floor(Math.random() * 3);
+                player.attack += bonus;
+                addLog(`Új fegyver! +${bonus} támadás`, 'item');
+            }
+        }
+
+        function checkLevelUp() {
+            while (player.xp >= player.xpNeed) {
+                player.xp -= player.xpNeed;
+                player.level++;
+                player.xpNeed = Math.floor(player.xpNeed * 1.5);
+                player.maxHp += 15;
+                player.hp = player.maxHp;
+                player.attack += 2;
+                addLog(`SZINTLÉPÉS! Most ${player.level}. szintű vagy!`, 'level');
+            }
+        }
+
+        function nextFloor() {
+            player.floor++;
+            addLog(`Lejutottál a ${player.floor}. emeletre!`, 'level');
+            generateMap();
+        }
+
+        function addLog(text, type = '') {
+            const log = document.getElementById('log');
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            entry.textContent = text;
+            log.insertBefore(entry, log.firstChild);
+            if (log.children.length > 20) log.removeChild(log.lastChild);
+        }
+
+        function updateUI() {
+            document.getElementById('hp').textContent = player.hp;
+            document.getElementById('maxhp').textContent = player.maxHp;
+            document.getElementById('health-bar').style.width = (player.hp / player.maxHp * 100) + '%';
+            document.getElementById('level').textContent = player.level;
+            document.getElementById('xp').textContent = player.xp;
+            document.getElementById('xpneed').textContent = player.xpNeed;
+            document.getElementById('gold').textContent = player.gold;
+            document.getElementById('attack').textContent = player.attack;
+            document.getElementById('floor').textContent = player.floor;
+        }
+
+        function endGame(won) {
+            gameOver = true;
+            const msg = document.getElementById('message');
+            document.getElementById('msg-title').textContent = won ? '🎉 Győzelem!' : '💀 Meghaltál!';
+            document.getElementById('msg-text').textContent = 
+                `Elért emelet: ${player.floor} | Szint: ${player.level} | Arany: ${player.gold}`;
+            msg.style.display = 'block';
+        }
+
+        function startGame() {
+            document.getElementById('message').style.display = 'none';
+            document.getElementById('log').innerHTML = '';
+            init();
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'r' || e.key === 'R') {
+                startGame();
+                return;
+            }
+            
+            switch(e.key) {
+                case 'ArrowUp': case 'w': case 'W': move(0, -1); break;
+                case 'ArrowDown': case 's': case 'S': move(0, 1); break;
+                case 'ArrowLeft': case 'a': case 'A': move(-1, 0); break;
+                case 'ArrowRight': case 'd': case 'D': move(1, 0); break;
+                case ' ': enemyTurn(); updateUI(); render(); break;
+            }
+        });
+
+        init();
+    </script>
+</body>
+</html>
