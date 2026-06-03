@@ -3,7 +3,7 @@ import csv
 
 szemelyek = []
 
-'''with open("python/otthoniclassok/szemelyek_bov.csv","r",encoding="utf-8")as data:
+with open("python/otthoniclassok/szemelyek_bov.csv","r",encoding="utf-8")as data:
     next(data)
 
     for sor in data:
@@ -26,7 +26,7 @@ szemelyek = []
 
 
 for sz in szemelyek:
-    print(sz)'''
+    print(sz)
 
 
 szemelyek2 = []
