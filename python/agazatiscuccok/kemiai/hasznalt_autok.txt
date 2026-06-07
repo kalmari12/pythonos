@@ -1,0 +1,13 @@
+Auto_ID	Marka	Modell	Gyartasi_Ev	Uzemanyag	Ar_HUF	Futott_KM
+1	Opel	Astra	2012	Benzin	1850000	165000
+2	Ford	Focus	2015	Dizel	2400000	142000
+3	Volkswagen	Golf	2014	Benzin	2900000	128000
+4	Toyota	Corolla	2018	Hibrid	5200000	85000
+5	BMW	320d	2013	Dizel	3500000	210000
+6	Audi	A4	2016	Dizel	4800000	175000
+7	Skoda	Octavia	2017	Benzin	3900000	110000
+8	Honda	Civic	2012	Benzin	2200000	150000
+9	Suzuki	Swift	2019	Benzin	3400000	45000
+10	Renault	Clio	2015	Benzin	1950000	130000
+11	Hyundai	i30	2016	Benzin	2800000	95000
+12	Kia	Ceed	2018	Dizel	4100000	115000

@@ -1,0 +1,5 @@
+Ez az első sor a szövegfájlban.
+Python programozás nagyon hasznos.
+A fájlkezelés fontos téma az ágazati vizsgán.
+Ezt a sort érdemes figyelmesen olvasni.
+Az ötödik és egyben utolsó sor.

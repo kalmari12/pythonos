@@ -1,0 +1,27 @@
+kemiai_elemek.csv
+Írd meg hozzá az Elem osztályt egy külön modulban!
+Importáld a főprogramba az elkészített osztályt!
+Importáld be a kemiai_elemek.csv tartalmát egy objektumlistába!
+Válogasd szét külön listába azokat az elemeket, amelyek elektronegativitása 0, és amelyeké nagyobb mint 0!
+Számold ki az elemek átlagos atomtömegét!
+Keresd meg a legnagyobb elektronegativitású elemet!
+Írd ki összesen hány kémiai elem található a fájlban!
+Exportáld ki egy fájlba azoknak az elemeknek az összes adatát, amelyek rendszáma kisebb mint 15!
+Írd ki azoknak az elemeknek a nevét és vegyjelét, amelyek atomtömege nagyobb mint 40!
+Számold meg, hány elem vegyjele áll pontosan 2 karakterből!
+Készíts egy függvényt atlag_atomtomeg() néven, amely visszaadja az elemek átlagos atomtömegét!
+Készíts egy függvényt legnagyobb_elektronegativitas() néven, amely visszaadja a legnagyobb elektronegativitású elemet!
+
+fluor.txt
+Importáld be a fluor.txt fájl tartalmát egy sztringbe!
+Távolítsd el a szövegből a speciális karaktereket!
+Az egész szöveget alakítsd kisbetűssé!
+Tárold el a szöveg szavait egy listában!
+Írd ki, hány szóból áll a szöveg!
+Írd ki, hány betűből áll a szöveg szóközök nélkül!
+Írd ki a képernyőre a leghosszabb szót!
+Írd ki a képernyőre a legrövidebb mondatot!
+Számold meg, hányszor szerepel a szövegben a fluor szó!
+Exportáld ki egy fájlba azokat a szavakat, amelyek f betűvel kezdődnek! Egy szó csak egyszer szerepeljen a fájlban.
+Készíts egy függvényt szo_db() néven, amely visszaadja a szavak számát!
+Készíts egy függvényt leghosszabb_szo() néven, amely visszaadja a leghosszabb szót!

@@ -18,31 +18,31 @@ for x in range(100):
 
 
 
-#tanulo = []
-#print("--- Jegynapló ---\n"
-#      "1. Jegy hozzáadása\n"
-#      "2. Átlag megjelenítése\n"
-#      "3. Statisztika\n"
-#      "4. Kilépés\n")
-#mitcsinal = int(input("Adja meg mit szeretne csinalni: "))
-#
-#while not mitcsinal == 4:
-#    print("--- Jegynapló ---\n"
-#      "1. Jegy hozzáadása\n"
-#      "2. Átlag megjelenítése\n"
-#      "3. Statisztika\n"
-#      "4. Kilépés\n")
-#    if mitcsinal == 1:
-#        jegybekeres = int(input("Adja meg a jegyet: "))
-#        if jegybekeres <= 5 or jegybekeres >= 1:
-#            tanulo.append(jegybekeres)
-#        else:
-#            print("A jegy nem elfogadható!")
-#    elif mitcsinal == 2:
-#        print(f"A tanuló átlaga: {sum(tanulo)/len(tanulo)}")
-#    elif mitcsinal == 3:
-#        print(f"A tanuló legjobb jegye: {max(tanulo)}\n"
-#              f"A tanuló leggyengébb jegye: {min(tanulo)}")
+tanulo = []
+print("--- Jegynapló ---\n"
+      "1. Jegy hozzáadása\n"
+      "2. Átlag megjelenítése\n"
+      "3. Statisztika\n"
+      "4. Kilépés\n")
+mitcsinal = int(input("Adja meg mit szeretne csinalni: "))
+
+while i mitcsinal != 4:
+    print("--- Jegynapló ---\n"
+      "1. Jegy hozzáadása\n"
+      "2. Átlag megjelenítése\n"
+      "3. Statisztika\n"
+      "4. Kilépés\n")
+    if mitcsinal == 1:
+        jegybekeres = int(input("Adja meg a jegyet: "))
+        if jegybekeres <= 5 or jegybekeres >= 1:
+            tanulo.append(jegybekeres)
+        else:
+            print("A jegy nem elfogadható!")
+    elif mitcsinal == 2:
+        print(f"A tanuló átlaga: {sum(tanulo)/len(tanulo)}")
+    elif mitcsinal == 3:
+        print(f"A tanuló legjobb jegye: {max(tanulo)}\n"
+              f"A tanuló leggyengébb jegye: {min(tanulo)}")
             
 
 

@@ -1,0 +1,12 @@
+Marka: Toyota, Modell: Corolla, Ar: 5200000
+
+
+Marka: Skoda, Modell: Octavia, Ar: 3900000
+
+
+Marka: Suzuki, Modell: Swift, Ar: 3400000
+
+
+Marka: Kia, Modell: Ceed, Ar: 4100000
+
+
